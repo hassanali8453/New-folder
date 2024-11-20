@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+  }
+}
 
 @media (min-width: 760px) and (max-width: 990px) {
     #navbutton{
