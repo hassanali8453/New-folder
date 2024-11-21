@@ -31,19 +31,19 @@ const NavBar = () => {
                     <div id='navbutton' className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 font-medium rtl:space-x-reverse md:flex-row md:mt-0">
                             <li>
-                                <Link href="#" className="block py-2 px-3 text-black rounded md:p-0" aria-current="page">Home</Link>
+                                <Link href="/" className="block py-2 px-3 text-black rounded md:p-0" aria-current="page">Home</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 rounded md:p-0">Opening Hours</Link>
+                                <Link href="/Pages/opening" className="block py-2 px-3 rounded md:p-0">Opening Hours</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 rounded md:p-0">About Us</Link>
+                                <Link href="/Pages/aboutp" className="block py-2 px-3 rounded md:p-0">About Us</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 rounded md:p-0">Contact Us</Link>
+                                <Link href="/Pages/contect" className="block py-2 px-3 rounded md:p-0">Contact Us</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 rounded md:p-0">Our Menu & Pricing</Link>
+                                <Link href="/" className="block py-2 px-3 rounded md:p-0">Our Menu & Pricing</Link>
                             </li>
                         </ul>
                     </div>

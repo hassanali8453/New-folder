@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from 'react';
 
-const Aboutus = () => {
+const AboutPage = () => {
   useEffect(() => {
     document.body.classList.add('animate-fade-in');
   }, []);
@@ -54,4 +54,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutPage;

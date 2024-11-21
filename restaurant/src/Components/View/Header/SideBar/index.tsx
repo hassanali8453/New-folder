@@ -27,27 +27,27 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       <nav className="mt-16 px-4">
         <ul className="space-y-4">
           <li>
-            <Link href="#" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Home
             </Link>
           </li>
           <li>
-            <Link href="#" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/Pages/opening" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Opening Hours Page
             </Link>
           </li>
           <li>
-            <Link href="#" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/Pages/aboutp" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 About Us
             </Link>
           </li>
           <li>
-            <Link href="#" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/Pages/contect" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Contact Us
             </Link>
           </li>
           <li>
-            <Link href="#" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Our Menu & Pricing
             </Link>
           </li>
