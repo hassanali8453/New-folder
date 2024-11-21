@@ -11,8 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FF6347', // Customize your brand color
-        secondary: '#6B8E23', // A secondary color for contrast
+        primary: '#FF6347',
+        secondary: '#6B8E23',
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-out',
@@ -28,7 +28,12 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
       },
+      fontFamily: {
+        eduFont: ['"Edu AU VIC WA NT Pre"', 'sans-serif'],
+        myriad: ['"myriad-pro-condensed"', 'sans-serif']
+      },
     },
+
   },
   plugins: [],
 }

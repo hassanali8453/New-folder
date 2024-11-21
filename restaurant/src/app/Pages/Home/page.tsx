@@ -12,13 +12,13 @@ const HomePage = () => {
           />
           <div className="absolute inset-0 bg-black opacity-70"></div>
           <div className="z-10">
-            <h1 className="text-5xl font-semibold leading-tight">
+            <h1 className="text-5xl font-eduFont leading-tight">
               Savor the Flavors of Authentic Cuisine
             </h1>
-            <p className="mt-4 text-xl">
+            <p className="mt-4 font-myriad text-2xl">
               Experience exquisite dishes, crafted with passion and served with love.
             </p>
-            <button className="mt-6 px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-lg font-semibold transition">
+            <button className="mt-6 px-8 py-3 font-myriad bg-green-600 hover:bg-green-700 rounded-lg text-2xl transition">
               Order Now
             </button>
           </div>
