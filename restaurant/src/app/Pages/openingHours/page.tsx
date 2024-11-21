@@ -3,7 +3,7 @@ import { FaClock } from "react-icons/fa"; // Using react-icons for a clock icon.
 
 const OpeningHours: FC = () => {
   return (
-    <div className="bg-white py-[93px] px-8 sm:px-12 lg:px-24">
+    <div className="bg-white min-h-screen md:py-60 sm:py-72 lg:py-52 xl:py-96  py-80">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Restaurant Opening Hours</h2>
         <div className="flex justify-center items-center space-x-3 mb-8">

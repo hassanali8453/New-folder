@@ -15,7 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here, like sending an email or calling an API
     alert("Message sent!");
   };
 
