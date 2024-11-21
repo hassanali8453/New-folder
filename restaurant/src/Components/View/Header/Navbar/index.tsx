@@ -14,13 +14,12 @@ const NavBar = () => {
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-
     return (
         <div>
             {/* Navbar */}
             <nav className="bg-white bg-opacity-80 fixed w-full animate__animated animate__fadeIn z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-300">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <h1 id='logo' className="text-2xl whitespace-nowrap font-bold text-[#7B3F00]">Altham Whistle</h1>
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

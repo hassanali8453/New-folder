@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import AboutPhoto from '@/Components/utils/assets/images/farhad-ibrahimzade-oubBY3kTyU8-unsplash.jpg'
@@ -8,7 +9,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section 1: Introduction */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h1 className="text-4xl font-extrabold text-primary sm:text-5xl">
+          <h1 className="text-4xl font-bold text-primary sm:text-5xl">
             Welcome to Our Restaurant
           </h1>
           <p className="mt-4 text-lg text-gray-600">
@@ -36,7 +37,7 @@ const About = () => {
             />
             <div className="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
             <div className="absolute inset-0 flex justify-center items-center">
-              <h3 className="text-white text-2xl font-bold">Fresh Ingredients, Delicious Food</h3>
+              <h3 id='imgtxt' className="text-white text-2xl font-bold">Fresh Ingredients, Delicious Food</h3>
             </div>
           </div>
         </div>

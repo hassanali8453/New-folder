@@ -26,5 +26,15 @@
     #contect{
         font-size: small;
     }
+    #imgtxt{
+        font-size: small;
+    }
 }
+
+
+@layer base {
+    html {
+      font-size: 16px;
+    }
+  }
 
