@@ -9,18 +9,16 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section 1: Introduction */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h1 className="text-4xl font-bold text-primary sm:text-5xl">
+          <h1 className=" font-myriad text-primary text-6xl">
             Welcome to Our Restaurant
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-xl font-myriad text-gray-600">
             Serving delicious meals with love and passion for over 20 years.
           </p>
         </div>
-
-        {/* Section 2: Our Story */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 animate-slideUp">
           <div>
-            <h2 className="text-3xl font-semibold text-secondary mb-4">Our Story</h2>
+            <h2 className="text-4xl font-myriad text-secondary mb-4">Our Story</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our restaurant was founded with a passion for bringing people together over great food. 
               What started as a small family-owned restaurant has now grown into a beloved spot in the 
@@ -44,7 +42,7 @@ const About = () => {
 
         {/* Section 3: Our Values */}
         <div className="mt-16 text-center animate-fadeIn">
-          <h2 className="text-3xl font-semibold text-primary mb-8">Our Values</h2>
+          <h2 className="text-5xl font-myriad  text-primary mb-8">Our Values</h2>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center text-center">
               <div className="text-5xl text-primary mb-4">
