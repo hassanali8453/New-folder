@@ -6,8 +6,6 @@ import { IoMdMenu } from "react-icons/io";
 import Sidebar from '../SideBar';
 import 'animate.css';
 
-
-
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -40,10 +38,10 @@ const NavBar = () => {
                                 <Link href="/Pages/aboutp" className="block py-2 px-3 rounded md:p-0">About Us</Link>
                             </li>
                             <li>
-                                <Link href="/Pages/contect" className="block py-2 px-3 rounded md:p-0">Contact Us</Link>
+                                <Link href="/Pages/contact" className="block py-2 px-3 rounded md:p-0">Contact Us</Link>
                             </li>
                             <li>
-                                <Link href="/" className="block py-2 px-3 rounded md:p-0">Our Menu & Pricing</Link>
+                                <Link href="/Pages/menupage" className="block py-2 px-3 rounded md:p-0">Our Menu & Pricing</Link>
                             </li>
                         </ul>
                     </div>

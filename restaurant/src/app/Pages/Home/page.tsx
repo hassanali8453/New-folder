@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HomeImage from "@/Components/utils/assets/images/pexels-ivan-j-long-578165-1362044.jpg"
+import HomeImage from "@/Components/utils/assets/images/HomePagePhoto.png"
 
 const HomePage = () => {
     return (
@@ -10,7 +10,7 @@ const HomePage = () => {
             alt="Restaurant Hero Image" 
             className="absolute inset-0 w-full h-full object-cover" 
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-70"></div>
           <div className="z-10">
             <h1 className="text-5xl font-semibold leading-tight">
               Savor the Flavors of Authentic Cuisine

@@ -5,7 +5,7 @@ import AboutPhoto from '@/Components/utils/assets/images/farhad-ibrahimzade-oubB
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section 1: Introduction */}
         <div className="text-center mb-16 animate-fadeIn">

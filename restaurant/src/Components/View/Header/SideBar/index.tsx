@@ -15,15 +15,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >
-      {/* Close Button */}
       <button
         onClick={toggleSidebar}
-        className="absolute top-4 left-4 text-black bg-white p-2 rounded-full border"
-      >
+        className="absolute top-4 left-4 text-black bg-white p-2 rounded-full border">
         <IoMdClose />
       </button>
-
-      {/* Sidebar Content */}
       <nav className="mt-16 px-4">
         <ul className="space-y-4">
           <li>
@@ -42,12 +38,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
             </Link>
           </li>
           <li>
-            <Link href="/Pages/contect" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/Pages/contact" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Contact Us
             </Link>
           </li>
           <li>
-            <Link href="/" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
+            <Link href="/Pages/menupage" className="w-full text-left py-2 px-4 text-[#982121] font-medium rounded">
                 Our Menu & Pricing
             </Link>
           </li>
