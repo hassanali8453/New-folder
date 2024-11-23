@@ -42,7 +42,7 @@ const OpeningHours: FC = () => {
             Join us any day between 1:00 PM to 11:00 PM for a delightful experience.
           </p>
           <a
-            href="/reservation"
+            href="/Pages/services"
             className="inline-block px-6 py-3 bg-yellow-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-200"
           >
             Make a Reservation
