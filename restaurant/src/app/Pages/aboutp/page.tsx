@@ -17,37 +17,71 @@ const AboutPage = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Restaurant Info Section */}
           <div className="animate__animated animate__fadeIn animate__delay-2s">
-            <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Restaurant Info</h2>
-              <ul className="space-y-3 text-gray-700">
-                <li><strong>Address:</strong> Burnley Road, Altham, Accrington, Lancashire, BB5 5UL</li>
-                <li><strong>Type:</strong> Fast Food Restaurant</li>
-                <li><strong>Opening Hours:</strong> 1:00 PM to 11:00 PM (7 days a week)</li>
-                <li><strong>Trading Since:</strong> August 2021</li>
-              </ul>
+          <div className="relative bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#89523b] rounded-full mt-2">
+              <div className="w-2 h-2 bg-blue-200 rounded-full mx-auto mt-2"></div>
+            </div>
+              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Our Story</h2>
+              <p>Welcome to our restaurant, where food, passion, and community come together. Our story began with a simple idea: to share delicious, homemade-style cuisine with our neighbors and friends.</p>
             </div>
           </div>
           <div className="animate__animated animate__fadeIn animate__delay-3s">
-            <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Owner Message</h2>
+          <div className="relative bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#89523b] rounded-full mt-2">
+              <div className="w-2 h-2 bg-blue-200 rounded-full mx-auto mt-2"></div>
+            </div>
+              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Our Vision</h2>
               <p className="text-gray-700 mb-4">
-                Welcome to Altham Whistle! We strive to provide the tastiest and most satisfying fast food experience. Our goal is to serve you with high-quality meals made fresh every day.
+                We aim to create a warm and inviting space where everyone feels at home. Our chefs are dedicated to crafting dishes that not only taste amazing but also use only the freshest ingredients, sourced locally whenever possible.
               </p>
-              <p className="text-gray-700">
-                <strong>Owner:</strong> Mr. Adrian Venoin
+            </div>
+          </div>
+          <div className="animate__animated animate__fadeIn animate__delay-3s">
+            <div className="relative bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#89523b] rounded-full mt-2">
+              <div className="w-2 h-2 bg-blue-200 rounded-full mx-auto mt-2"></div>
+            </div>
+              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Our Values</h2>
+              <ul className='mb-2' >
+                  <li>
+                    <strong>Quality:</strong> We are committed to serving only the best.
+                  </li>
+                  <li>
+                    <strong>Community:</strong> We believe in supporting local businesses and events.</li>
+                  <li>
+                    <strong>Hospitality:</strong> We strive to make every guest feel welcome and valued.</li>
+                </ul>
+            </div>
+          </div>
+          <div className="animate__animated animate__fadeIn animate__delay-3s">
+            <div className="relative bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#89523b] rounded-full mt-2">
+              <div className="w-2 h-2 bg-blue-200 rounded-full mx-auto mt-2"></div>
+            </div>
+              <h2 className="text-2xl font-bold text-indigo-500 mb-4">Our History</h2>
+              <p className="text-gray-700 mb-4">
+                From our humble beginnings to our current location, learn about our journey and how we have grown.
               </p>
             </div>
           </div>
         </div>
-        <div className="mt-12 animate__animated animate__fadeIn animate__delay-4s">
-          <h2 className="text-2xl font-bold text-indigo-500 mb-4">Contact Information</h2>
-          <ul className="text-gray-700 space-y-2">
-            <li><strong>Contact Number:</strong> 0141 611 27575</li>
-            <li><strong>Email:</strong> <a href="mailto:clearbusinessdgdfgdfbyadrian@gmail.com" className="text-indigo-500 hover:underline">clearbusinessbyadrian@gmail.com</a></li>
-            <li><strong>Online Orders Email:</strong> SAME</li>
-          </ul>
+        <div className="mt-12 shadow-lg animate__animated animate__fadeIn animate__delay-4s">
+          <div className="relative bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#89523b] rounded-full mt-2">
+              <div className="w-2 h-2 bg-blue-200 rounded-full mx-auto mt-2"></div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-indigo-500 mb-4">Awards and Recognition</h2>
+            <p className="mb-4">
+              We are proud to have received [awards or recognition] for our efforts in providing excellent food and service.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-indigo-500 mb-4">Get in Touch</h2>
+            <p className="mb-4">
+              Contact us to learn more about our story, or to share your own experience with us!
+            </p>
+          </div>
         </div>
       </div>
     </div>
