@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from 'react'
 import { FaLaptop, FaCalendarAlt, FaBox, FaTruck, FaConciergeBell, FaUsers, FaGift, FaCreditCard, FaDrumstickBite, FaLeaf, FaMusic, FaPaw, FaSun, FaChild, FaCocktail } from 'react-icons/fa'
 
@@ -13,8 +14,8 @@ const services = [
     { id: 8, icon: <FaCreditCard />, title: 'Gift Cards', description: 'Give the gift of a delicious meal with our gift cards for your friends and family.', color: 'bg-teal-500' },
     { id: 9, icon: <FaDrumstickBite />, title: 'Party Platters', description: 'Order large quantities of our dishes for your next gathering or celebration.', color: 'bg-yellow-600' },
     { id: 10, icon: <FaLeaf />, title: 'Dietary Options', description: 'We offer gluten-free, vegan, and other dietary options to cater to your needs.', color: 'bg-green-600' },
-  ]
-  
+]
+
 const specialServices = [
   { id: 1, icon: <FaMusic />, title: 'Live Music', description: 'Enjoy live music and entertainment while dining with us.' },
   { id: 2, icon: <FaPaw />, title: 'Pet-Friendly Dining', description: 'Our outdoor seating area welcomes your furry friends!' },
@@ -39,13 +40,33 @@ const ServicesPage = () => {
 
         {/* Services Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 animate-slideUp">
-          {services.map(service => (
-            <div key={service.id} className={`service-card flex flex-col items-center text-center p-8 ${service.color} text-white rounded-lg shadow-xl transition-all hover:scale-105`}>
-              <div className="text-5xl mb-4">
-                {service.icon}
-              </div>
-              <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-              <p className="opacity-80">{service.description}</p>
+          {services.map((service, index) => (
+            <div 
+              key={service.id} 
+              className={`service-card flex flex-col items-center text-center p-8 ${service.color} text-white rounded-lg shadow-xl transition-all hover:scale-105`}
+            >
+              {/* Only make the first card clickable */}
+              {index === 0 ? (
+                <Link href="/Pages/contact" passHref>
+                  <div className="cursor-pointer">
+                    {/* Center the icon */}
+                    <div className="flex items-center justify-center text-5xl mb-4">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                    <p className="opacity-80">{service.description}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div>
+                  {/* Center the icon */}
+                  <div className="flex items-center justify-center text-5xl mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                  <p className="opacity-80">{service.description}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -70,4 +91,4 @@ const ServicesPage = () => {
   )
 }
 
-export default ServicesPage
+export default ServicesPage;
