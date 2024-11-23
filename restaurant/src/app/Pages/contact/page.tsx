@@ -1,29 +1,44 @@
-"use client"
-import React, { useState } from "react";
+'use client';  // To enable React hooks in this component
 
-const ContectUs = () => {
+import React, { useState } from 'react';
+
+const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message sent!");
+
+    const response = await fetch('/api/page', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      setIsSubmitted(true); // Show success message
+    } else {
+      alert(result.message); // Show error message
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-lg w-full bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center text-gray-900 mb-6">
-          Contact Us
-        </h2>
+        <h2 className="text-2xl font-semibold text-center text-gray-900 mb-6">Contact Us</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="space-y-4">
@@ -80,9 +95,11 @@ const ContectUs = () => {
             </button>
           </div>
         </form>
+
+        {isSubmitted && <p className="text-green-600 mt-4">Thank you for your message!</p>}
       </div>
     </div>
   );
 };
 
-export default ContectUs;
+export default ContactUs;
