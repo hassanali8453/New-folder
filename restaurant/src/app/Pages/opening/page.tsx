@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FaClock } from "react-icons/fa"; // Using react-icons for a clock icon.
+import { FaClock } from "react-icons/fa";
 
 const OpeningHours: FC = () => {
   return (
@@ -13,7 +13,6 @@ const OpeningHours: FC = () => {
           </p>
         </div>
 
-        {/* Opening hours list */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <div className="text-center bg-gray-50 rounded-lg p-8 shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-700">Monday - Sunday</h3>
@@ -34,8 +33,7 @@ const OpeningHours: FC = () => {
             </p>
           </div>
         </div>
-
-        {/* Call to Action Section */}
+        
         <div className="mt-16">
           <h3 className="text-2xl font-semibold text-gray-700 mb-4">Ready to Enjoy?</h3>
           <p className="text-lg text-gray-600 mb-4">

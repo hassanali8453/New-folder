@@ -19,7 +19,7 @@ const HomePage = () => {
             <p className="mt-4 font-normal text-2xl">
               Experience exquisite dishes, crafted with passion and served with love.
             </p>
-            <button className="mt-6 px-8 py-3 font-myriad bg-green-600 hover:bg-green-700 rounded-lg text-2xl transition">
+            <button id="homebtn" className="mt-6 px-8 py-3 font-myriad bg-green-600 hover:bg-green-700 rounded-lg text-2xl transition">
               <Link href="/Pages/services" >Order Now</Link>
             </button>
           </div>

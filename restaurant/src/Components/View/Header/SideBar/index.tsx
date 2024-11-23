@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >
-      <button
+      <button id='sidebarbtn'
         onClick={toggleSidebar}
         className="absolute top-4 left-4 text-black bg-white p-2 rounded-full border">
         <IoMdClose />

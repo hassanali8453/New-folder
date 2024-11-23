@@ -22,7 +22,7 @@
 }
 
 
-@media (min-width: 200px) and (max-width: 400px) {
+@media (min-width: 200px) and (max-width: 460px) {
     #logo{
         font-size: medium;
     }
@@ -31,5 +31,8 @@
     }
     #imgtxt{
         font-size: small;
+    }
+    #logoImage{
+        display: none;
     }
 }

@@ -5,6 +5,8 @@ import React from 'react';
 import { IoMdMenu } from "react-icons/io";
 import Sidebar from '../SideBar';
 import 'animate.css';
+import Image from 'next/image';
+import LogoImg from "@/Components/utils/assets/images/logo.png";
 
 const NavBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,6 +20,7 @@ const NavBar = () => {
             <nav className="bg-white bg-opacity-80 fixed w-full animate__animated animate__fadeIn z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-300">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <Image id='logoImage' src={LogoImg} width={40} alt='/' className='rounded-full' />
                         <h1 id='logo' className="text-4xl whitespace-nowrap font-myriad text-[#7B3F00]">Altham Whistle</h1>
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
